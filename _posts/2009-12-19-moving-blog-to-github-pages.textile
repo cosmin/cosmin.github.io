@@ -1,0 +1,14 @@
+---
+layout: post
+title: Blogging with git, emacs and GitHub Pages.
+---
+
+h1. {{ page.title }}
+
+p(meta). 19 Dec 2008 - Chicago
+
+It seems like I can't make up my mind about where I host my blog/website. So far I've moved from my own installation of Wordpress to wordpress.com and then to SquareSpace. But every time there was something missing, something that prevented me from utilizing my blog the way I wanted. I'm starting to think the problem was that my blog was managed differently from my code projects. Instead of git + emacs I had to use a Web UI to type my posts and manage the layout of my blog. I was thinking about building my own blogging solution but never had the time. 
+
+Then I read "Blogging Like a Hacker":http://mojombo.github.com/2008/11/17/blogging-like-a-hacker.html by Tom Preston-Werner and that convinced me that I should treat my blog like a code project and keep it in version control. I wanted to check out Jekyll but never had the time to get Ruby and friends installed on my server so I kept putting it off. Then I found out about "GitHub Pages":http://github.com/blog/272-github-pages and that it automatically supports Jekyll. I finally ran out of excuses and so I decided to move my blog to git and GitHub like all my other projects. 
+
+I don't have a solution to automatically convert my Wordpress posts to Jekyll format so I'll have to manually port over the ones that I think are worthwhile. I'll probably do that over the next week. Looking forward to blogging like a hacker in 2009.
