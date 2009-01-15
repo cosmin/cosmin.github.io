@@ -1,0 +1,12 @@
+---
+layout: post
+title: Cosmin Stejerean (offbytwo)
+---
+
+h1. About 
+
+My name is Cosmin Stejerean, and I am a hacker and entrepreneur located in Chicago, IL. I have a background in software engineering and computer security. In addition to Java and Python, which I have used extensively for work during the past three years, I am learning and experimenting with -Scheme-, -Common Lisp-, -Erlang-, Haskell and Clojure. If you'd like to learn more about my background see my "LinkedIn profile":http://linkedin.com/in/cosmin. I am always interested in new ideas and projects, feel free to contact me. You can also follow my updates on "Twitter":http://twitter.com/offbytwo.
+
+h1. Interests
+
+My general interests include computer vision, machine learning, cryptography and distributed algorithms. I am a big fan of open source software and I plan to release most of my work under an open license. I'm currently hosting some of my work on "github":http://github.com/offbytwo
