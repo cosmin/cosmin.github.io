@@ -1,0 +1,29 @@
+---
+layout: post
+title: ipython-mode with Emacs 22
+---
+
+h1. {{ page.title }}
+
+p(meta). 7 November 2008 - Chicago
+
+I started using Emacs recently for Lisp programming and I decided to try using it with Python as well so I don't need to keep switching editors. Traditionally there was the python-mode project for Emacs up to 21. But Emacs 22 comes with its own shiny python mode. The problem is I am very used to using IPython and I wanted to get it to work in Emacs. The IPython distribution comes with ipython.el but this requires python-mode.el and therefore does not work with the python mode in Emacs22. After a bit of poking around here is how to setup IPython mode in Emacs22. Perhaps it might help another Emacs newbie like myself.
+
+
+Get python-mode from <code>http://downloads.sourceforge.net/python-mode/python-mode-1.0.tar.gz</code>
+
+Get ipython.el from <code>http://ipython.scipy.org/dist/ipython.el</code< (or copy it from your local ipython installation)
+
+Modify the load path in your <code>~/.emacs</code> file to include the locations for the python-mode and ipython.el
+
+I placed ipython.el and python-mode under /usr/share/emacs/site-lisp/ and here is what my .emacs file looks like.
+
+<pre><code>
+(add-to-list 'load-path "/usr/share/emacs/site-lisp/python-mode/")
+(setq ipython-command "/usr/bin/ipython")
+(require 'ipython)
+</code></pre>
+
+Now you can start ipython with <code>M-x py-shell</code>
+
+Update: try running "which ipython" to see the path to your ipython interpreter. Depending on how you installed IPython it might be <code>/usr/local/bin/ipython</code>
