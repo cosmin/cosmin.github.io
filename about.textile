@@ -5,7 +5,11 @@ title: Cosmin Stejerean (offbytwo)
 
 h1. About 
 
-My name is Cosmin Stejerean, and I am a hacker and entrepreneur currently located in Austin, TX. Before moving to Austin I spent 9 years living in and around Chicago. I have a background in software engineering and information security, which I have done professionally since 2004. You can read more about my background on "LinkedIn":http://linkedin.com/in/cosmin. I am an advocate of automated testing, continuous integration and iterative development. I believe these practices are important for developing quality software. I prefer using open source software and open systems, but I am happy to make exceptions when the closed alternative is significantly better. Whenever possible I try to release most of my work under liberal open source licenses. You can browse some of my projects on "github":http://github.com/offbytwo.
+My name is Cosmin Stejerean, and I am a hacker and entrepreneur currently located in Austin, TX. Before moving to Austin I spent 9 years living in and around Chicago. I have a background in software engineering and information security, which I have done professionally since 2004. You can read more about my background on "LinkedIn":http://linkedin.com/in/cosmin. 
+
+I am an advocate of automated testing, continuous integration and iterative development. I believe these practices are important for developing quality software. 
+
+I prefer using open source software and open systems, but I am happy to make exceptions when the closed alternative is significantly better. Whenever possible I try to release most of my work under liberal open source licenses. You can browse some of my projects on "github":http://github.com/offbytwo.
 
 You should follow me on "Twitter":http://twitter.com/offbytwo.
 
