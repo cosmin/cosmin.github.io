@@ -11,7 +11,7 @@ I am an advocate of automated testing, continuous integration and iterative deve
 
 I prefer using open source software and open systems, but I am happy to make exceptions when the closed alternative is significantly better. Whenever possible I try to release most of my work under liberal open source licenses. You can browse some of my projects on "github":http://github.com/offbytwo.
 
-You should follow me on "Twitter":http://twitter.com/offbytwo.
+You should follow me on Twitter "here":http://twitter.com/offbytwo.
 
 h1. Technical Interests
 
