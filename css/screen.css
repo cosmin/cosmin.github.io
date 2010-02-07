@@ -131,6 +131,12 @@ ul.posts {
       .site .footer .contact a {
         color: #8085C1;
       }
+     
+    .site .footer .headshot {
+        margin-top: 0.5em;
+        margin-right: 2em;
+        float: left;
+    }
     
     .site .footer .rss {
       margin-top: 1.1em;
