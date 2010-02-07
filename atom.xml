@@ -5,10 +5,10 @@ layout: nil
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>Cosmin Stejerean (offbytwo)</title>
- <link href="http://offbytwo.github.com/atom.xml" rel="self"/>
- <link href="http://offbytwo.github.com/"/>
+ <link href="http://offbytwo.com/atom.xml" rel="self"/>
+ <link href="http://offbytwo.com/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://offbytwo.github.com/</id>
+ <id>http://offbytwo.com/</id>
  <author>
    <name>Cosmin Stejerean</name>
    <email>cosmin@offbytwo.com</email>
@@ -19,7 +19,7 @@ layout: nil
    <title>{{ post.title }}</title>
    <link href="http://offbytwo.github.com{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://offbytwo.github.com{{ post.id }}</id>
+   <id>http://offbytwo.com{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}
