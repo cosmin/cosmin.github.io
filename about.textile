@@ -5,7 +5,7 @@ title: Cosmin Stejerean (offbytwo)
 
 h1. About 
 
-My name is Cosmin Stejerean, and I am a hacker and entrepreneur currently located in Austin, TX. Before moving to Austin I spent 9 years living in and around Chicago. I have a background in software engineering and information security, which I have done professionally since 2004. You can read more about my background on "LinkedIn":http://linkedin.com/in/cosmin. 
+My name is Cosmin Stejerean, and I am a hacker and entrepreneur currently located in Dallas, TX. Before moving to Dallas I spent 9 years living in and around Chicago and 1 year living in Austin, although I spent most of that time working in Dallas. I have a background in software engineering and information security, which I have done professionally since 2004. You can read more about my background on "LinkedIn":http://linkedin.com/in/cosmin. 
 
 I am an advocate of automated testing, continuous integration and iterative development. I believe these practices are important for developing quality software. 
 
@@ -15,7 +15,7 @@ You should follow me on Twitter "here":http://twitter.com/offbytwo.
 
 h1. Technical Interests
 
-I enjoy learning and using new programming languages. For example, during the past year I developed applications commercially using Clojure, Java, Objective-C and Python. At the moment I'm trying to learn Erlang, Haskell and Scala. I am a fan of functional programming languages, and I think functional programming will become more mainstream in the near future. 
+I enjoy learning and using new programming languages. For example, during the past year I developed applications commercially using Clojure, Java, Objective-C and Python. When I find the time I would like to learn Erlang, Haskell, OCaml and Scala. I am a fan of functional programming languages and I believe that functional programming will become much more common in the near future.
 
 I'm also really interested in using GPUs to solve computationally intensive problems. I'm particularly interested in using GPUs to solve problems in the computer vision field. 
 
