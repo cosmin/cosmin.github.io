@@ -1,0 +1,17 @@
+---
+layout: post
+title: Getting started (quickly) with OpenStack's Swift
+---
+
+h1. {{ page.title }}
+
+p(meta). 10 November 2010 - San Antonio
+
+I was at the <a href="http://www.openstack.org/blog/2010/09/the-second-openstack-design-conference/">OpenStack Design Summit</a> this week and I wanted to check out the latest release of Swift, OpenStack's blog storage technology. The <a href="http://swift.openstack.org/development_saio.html">Swift All In One</a> guide contains everything necessary to get started with Swift on a development machine, but it involves far too much effort for my tastes.
+
+I decided to quickly automate the entire process with a single bash script. So now you can get started with Swift with two commands on a new Ubuntu 10.10 VM
+
+<code>wget http://offbytwo.com/scripts/try-swift-on-ubuntu.sh</code>
+<code>bash try-swift-on-ubuntu.sh devauth</code>
+
+There is actually a far better way to get Swift up and running in an automated fashion using Chef (and possibly Vagrant), but I'll leave that for another post.
