@@ -1,0 +1,154 @@
+Things to talk about:
+
+python basics:
+ - variable assignment
+
+     >>> i = 9
+     >>> i += 1
+     >>> i
+     10
+
+ - math
+
+     >>> i ** 3
+     1000
+     >>> i % 3
+     1
+
+ - bases (binary, octal, hex)
+
+     >>> 0b1010
+     10
+     >>> 012
+     10
+     >>> 0xA
+     10
+      
+ - bit operations
+
+     >>> i & 3
+     2
+     >>> i | 5
+     15
+     >>> i << 2
+     40
+     >>> i >> 1
+     5
+
+ - strings (single quote, double quote, triple quote, raw)
+
+     >>> 'Python'
+     'Python'
+     >>> "Python"
+     'Python'
+     >>> '''Python'''
+     'Python'
+     >>> """Python"""
+     'Python'
+
+ - lists (mutable)
+
+     >>> [1, 2, 3, 4, 5]
+     [1, 2, 3, 4, 5]
+
+ - tuples (immutable)
+
+     >>> (1, 2, 3, 4, 5)
+     (1, 2, 3, 4, 5)
+
+ - dictionaries
+    
+     >>> {"a" : 1, "b" : 2, "c" : 3}
+     {'a': 1, 'b': 2, 'c': 3}
+     >>> dict(a = 1, b = 2, c = 3)
+     {'a': 1, 'b': 2, 'c': 3}
+
+ - if statements
+     >>> if 10 % 2 == 0:
+     ...     "Even"
+     ... else:
+     ...     "Odd"
+     ... 
+     ... 
+     'Even'
+
+ - while loops
+     >>> while True:
+     ...     i -= 1
+     ...     if i % 2 == 0:
+     ...         break
+     ... 
+     ... 
+     >>> i
+     8
+
+ - for loops
+
+     >>> range(10)
+     [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+     >>> for x in range(10):
+     ...     x * 2
+     ... 
+     ... 
+     0
+     2
+     4
+     6
+     8
+     10
+     12
+     14
+     16
+     18
+     
+ - defining a function
+
+     >>> def sum(x, y):
+     ...     return x + y
+     ... 
+     >>> 
+     >>> sum(2, 3)
+     5
+
+ - lambdas
+
+     >>> sum = lambda x, y: x + y
+     >>> sum
+     <function <lambda> at 0xcca130>
+     >>> sum(2, 3)
+     5
+     
+ - creating a class
+ - modules and imports
+ - exception handling
+
+input and output:
+ - printing to stdout
+ - read user input
+ - reading from a file
+ - writing to a file
+
+standard library overview:
+ - XML, CSV
+ - tcp server, http server, smtp server
+
+python specific features:
+ - multiple inheritance
+ - decorators
+ - list comprehension
+ - generators
+
+advanced usecases:
+ - metaclasses
+ - intercept instance attribute access
+ - create classes programatically
+ - sys._getframe
+ - custom importers
+
+multiple implementations
+ - CPython (default)
+ - Jython
+ - IronPython
+ - PyPy
+ - etc
