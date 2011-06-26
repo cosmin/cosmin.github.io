@@ -14,7 +14,7 @@ h3. Common use cases
 
 I often see xargs used in combination with <code>find</code> in order to do something with the list of files returned by find. 
 
-<i>Pedantic note:</i> As people have correctly pointed out on Twitter and on Hacker News, find is a very powerful command and it has built in flags such as <code>-exec</code> and <code>-delete</code> that you can often use instead of piping to xargs. However people either don't know about the options to find, or forget how to invoke -exec with it's archaic syntax. I should write a follow up post on find.
+<i>Pedantic note:</i> As people have correctly pointed out on Twitter and on Hacker News, find is a very powerful command and it has built in flags such as <code>-exec</code> and <code>-delete</code> that you can often use instead of piping to xargs. However people either don't know about the options to find, forget how to invoke -exec with it's archaic syntax, or prefer the simplicity of xargs. There are also performance implications to the various choices. I should write a follow up post on find.
 
 <i>Contrived examples warning:</i> I needed something simple examples that would not detract from the topic. This is the best I could do given the time I had. <a target="_blank" href="https://github.com/offbytwo/offbytwo.github.com">Patches are welcome</a> :)
 
@@ -31,7 +31,7 @@ Recursively find all Python files and search them for the word 'import'
 
 h3. Handling files or folders with spaces in the name
 
-One problem with the above examples is that it does not correctly handle files or directories with a space in the name. This is because xargs by default will split on any white-space character. A quick solution to this is to tell find to delimit results with NUL (\0) characters (by supplying <code>-print0</code> to find), and to tell xargs to split the input on NUL characters as well ( -0).
+One problem with the above examples is that it does not correctly handle files or directories with a space in the name. This is because xargs by default will split on any white-space character. A quick solution to this is to tell find to delimit results with NUL (\0) characters (by supplying <code>-print0</code> to find), and to tell xargs to split the input on NUL characters as well (<code>-0</code>).
 
 Remove backup files recursively even if they contain spaces
 <code>find . -name '*~' -print0 | xargs -0 rm </code>
@@ -53,7 +53,7 @@ Sometimes the list of arguments piped to xargs would cause the resulting command
 
 <code>getconf ARG_MAX</code>
 
-In order to avoid hitting the system limit, xargs has its own limit to the maximum length of the resulting command and it will automatically truncate the generated command. This limit defaults to 4096 and you can override xargs's limit with the <code>-s</code> flag. This will be particularly important when you are dealing with a large source tree.
+In order to avoid hitting the system limit, xargs has its own limit to the maximum length of the resulting command. If the supplied arguments would cause the invoked command to exceed this built in limit, xargs will split the input and invoke the command repeatedly. This limit defaults to 4096, which can be significantly lower than ARG_MAX on modern systems. You can override xargs's limit with the <code>-s</code> flag. This will be particularly important when you are dealing with a large source tree.
 
 
 h3. Operating on subset of arguments at a time
