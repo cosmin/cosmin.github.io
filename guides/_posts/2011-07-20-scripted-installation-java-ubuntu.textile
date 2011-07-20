@@ -28,7 +28,8 @@ class sun_java_6 {
 
   $release = regsubst(generate("/usr/bin/lsb_release", "-s", "-c"), '(\w+)\s', '\1')
   
-  file { "/etc/apt/partner.list":
+  file { "partner.list":
+    path => "/etc/apt/sources.list.d/partner.list"
     ensure => file,
     owner => "root",
     group => "root",
@@ -55,12 +56,12 @@ class sun_java_6 {
 
   package { "sun-java6-jdk":
     ensure => latest,
-    require => [ File["/etc/apt/partner.list"], Exec["agree-to-jdk-license"] ],
+    require => [ File["partner.list"], Exec["agree-to-jdk-license"] ],
   }
 
   package { "sun-java6-jre":
     ensure => latest,
-    require => [ File["/etc/apt/partner.list"], Exec["agree-to-jre-license"] ],
+    require => [ File["partner.list"], Exec["agree-to-jre-license"] ],
   }
   
 }
