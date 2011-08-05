@@ -14,7 +14,7 @@ layout: nil
    <email>cosmin@offbytwo.com</email>
  </author>
 
- {% for post in site.categories.blog %}
+ {% for post in site.categories.guides %}
  <entry>
    <title>{{ post.title }}</title>
    <link href="http://offbytwo.github.com{{ post.url }}"/>
