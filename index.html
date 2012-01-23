@@ -4,18 +4,29 @@ title: Cosmin Stejerean (offbytwo)
 ---
 
 <div id="home">
-  <!-- <h1>Blog Posts</h1>
-    <ul class="posts">
-      {% for post in site.categories.blog %}
-        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-      {% endfor %}
-    </ul> -->
   
   <h1>Guides</h1>
   <ul class="posts">
     {% for post in site.categories.guides %}
         <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
      {% endfor %}
+  </ul>
+
+  <h1>Web Projects</h1>
+  <ul class="posts">
+    <li><a href="http://clk.tc">clk.tc</a> &raquo; a flexible url shortener [<a href="https://github.com/cosmin/clktc">source</a>]</li>
+    <li><a href="http://weathermoment.com">Weather Moment</a> &raquo; current weather conditions based on HTML 5 location [<a href="https://github.com/cosmin/weathermoment">source</a>]</li>
+    <li><a href="http://onclojure.com">On Clojure</a> &raquo; blog dedicated to all things Clojure</li>
+  </ul>
+
+  <h1>Open Source Projects</h1>
+  <ul class="posts">
+    <li><a href="http://github.com/cosmin/IClojure">IClojure</a> &raquo; A better Clojure REPL, inspired by IPython.</li>
+    <li><a href="http://github.com/cosmin/git-hg">git-hg</a> &raquo; Work with Mercurial repos using git.</li>
+    <li><a href="http://github.com/clojure/java.data">java.data</a> &raquo; Transform between Java objects and Clojure data structures.</li>
+    <li><a href="http://github.com/cosmin/cljenv">cljenv</a> &raquo; Everything you need to get started with Clojure, including Emacs support.</li>
+    <li>&nbsp;</li>
+    <li>See the full listing on <a href="http://github.com/offbytwo">github.com/offbytwo</a></li>
   </ul>
 
   <h1>Talks, Presentations, Etc</h1>
@@ -34,14 +45,10 @@ title: Cosmin Stejerean (offbytwo)
     <li><span>08 Dec 2006</span> &raquo; <a href="/presentations/honeypots.pdf">Introduction to Honeypots</a></li>
   </ul>
 
-  <h1>Open Source Projects</h1>
+  <h1>Minor Open Source Contributions</h1>
   <ul class="posts">
-    <li><a href="http://github.com/cosmin/cljenv">cljenv:</a> Everything you need to get started with Clojure, including Emacs support.</li>
-    <li><a href="https://github.com/clojure/java.data">java.data:</a> Utilities in Clojure contrib for transforming between Java objects and Clojure data structures.</li>
-    <li><a href="http://github.com/offbytwo/git-hg">git-hg:</a> Half-baked wrapper for checking out a Mercurial repo using git. No push support.</li>
-    <li><a href="http://github.com/cosmin/hgformlogin">hgformlogin:</a> plugin for Mercurial to work with form-based authentication.</li>
-    <li>&nbsp;</li>
-    <li>See the full listing on <a href="http://github.com/offbytwo">github.com/offbytwo</a></li>
+    <li><a href="https://github.com/jline/jline2">JLine 2</a> &raquo; several bug fixes [<a href="https://github.com/jline/jline2/commits/master?author=cosmin">my commits</a>]</li>
+    <li><a href="https://github.com/clojure/clojure">Clojure</a> &raquo; minor bug fix [<a href="https://github.com/clojure/clojure/commits/master?author=cosmin">my commits</a>]</li>
   </ul>
 
   <h1>Last Twitter Update</h1>
