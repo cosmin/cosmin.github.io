@@ -3,10 +3,8 @@ layout: extrapage
 title: Cosmin Stejerean (offbytwo)
 ---
 
-h1. About 
+h1. About
 
-I currently live in Portland and work at Simple. I have a background in software engineering and information security, which I have done professionally since 2004. Recently I developed applications commercially using Clojure, Java, Objective-C and Python. You can read more about my background on "LinkedIn":http://linkedin.com/in/cosmin. 
-
-I am an advocate of automated testing, continuous integration and iterative development. I believe these practices are important for developing quality software. I prefer using open source software and open systems, but I am happy to make exceptions when the closed alternative is significantly better. Whenever possible I try to release most of my work under liberal open source licenses. You can browse some of my projects on "github":http://github.com/cosmin
+I currently live nearby Dallas, TX and work in the Operations team at Simple. Before Simple I worked as a lead consultant and trainer at ThoughtWorks, where I co-authored and presented training classes on software engineering, infrastructure automation and cloud computing. I have a background that blends software engieering, operations and information security, which I have done professionally since 2004. During this time I have worked as a developer and technical lead in a large variety of projects, from small projects at startups to large distributed agile projects spanning multiple countries. You can read more about my background on "LinkedIn":http://linkedin.com/in/cosmin.
 
 In addition to writing software I enjoy shooting and editing video, particularly at technical user groups and conferences. I became involved with video after PyCon 2008 where I unknowingly signed up for digitizing 100+ hours of video. I spent the next 4 days shuffling video tapes around the clock, without any sleep. Since then I have been involved in recording "PyCon 2009":http://pycon.blip.tv, "IPhone Camp Atlanta":http://ipca09.blip.tv/ and various user group meeting around Chicago.
