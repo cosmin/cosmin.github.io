@@ -16,16 +16,20 @@ html, body {
 }
 
 body {
-   background-color: white;
-  /* font: 16px helvetica, arial, clean, sans-serif;
-*font-size: small;
-*/
+   background-color: #ecedef;
+   background-image: url('/images/linen.png');
    font-family: "adelle",serif;
    font-size: 16px;
    text-align: center;
+   color: #444;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
+   font-size: 1.2em;
+   color: #222;
+}
+
+h2, h3, h4, h5, h6 {
    font-size: 100%;
 }
 
@@ -84,33 +88,47 @@ ul.posts span {
 .site {
    font-size: 110%;
    text-align: justify;
-   width: 40em;
-   margin: 3em auto 2em auto;
+   margin: 0px auto 2em auto;
+   width: 46em;
+   padding: 3em 3em 2em 3em;
    line-height: 1.5em;
+   background: #fefefe;
 }
 
-.title {
+.header {
    color: #a00;
    font-weight: bold;
    margin-bottom: 2em;
 }
 
-.title a {
+.header .title a {
+   font-size: 2em;
+   -moz-text-shadow: 1px 1px 1px #ccc;
+   -webkit-text-shadow: 1px 1px 1px #ccc;
+   text-shadow: 1px 1px 1px #ccc;
+   margin-left: -1px;
+}
+
+.header .sections {
+   float: right;
+}
+
+.header a {
    color: #a00;
    text-decoration: none;
 }
 
-.site .title a:hover {
+.header a:hover {
    color: black;
 }
 
-.site .title a.extra {
-   color: #aaa;
+.header a.extra {
+   color: #888;
    text-decoration: none;
    margin-left: 1em;
 }
 
-.site .title a.extra:hover {
+.header a.extra:hover {
    color: black;
 }
 
@@ -133,6 +151,12 @@ ul.posts span {
 
 .site .footer .contact a {
    color: #8085C1;
+}
+
+.footer .contact.links {
+   float: right;
+   margin-right: 0px;
+   text-align: right;
 }
 
 .site .footer .headshot {
