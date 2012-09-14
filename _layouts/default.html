@@ -4,8 +4,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-   <title>{{ page.title }}</title>
    <meta name="author" content="Cosmin Stejerean" />
+   <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+
+   <title>{{ page.title }}</title>
    <link href="http://feeds.feedburner.com/offbytwo" rel="alternate" title="Cosmin Stejerean" type="application/atom+xml" />
 
    <!-- syntax highlighting CSS -->
@@ -20,22 +22,22 @@
 <body>
 
 <div class="site">
-  <div class="header">
-    <span class="title">
+  <header>
+    <div class="logo">
       <a href="/">Cosmin Stejerean</a>
-    </span>
-    <span class="sections">
-      <a class="extra" href="/about.html">about</a>
-      <a class="extra" href="/guides/">guides</a>
-      <a class="extra" href="http://twitter.com/offbytwo">twitter</a>
-      <a class="extra" href="http://github.com/cosmin">github</a>
-    </span>
-  </div>
+    </div>
+    <nav>
+      <a href="/about.html">about</a>
+      <a href="/guides/">guides</a>
+      <a href="http://twitter.com/offbytwo">twitter</a>
+      <a href="http://github.com/cosmin">github</a>
+    </nav>
+  </header>
 
   {{ content }}
 
-  <div class="footer">
-    <div class="headshot"><img src="http://www.gravatar.com/avatar/1103cade8085a41124183af66c2ba35a.png"></div>
+  <footer>
+    <div class="headshot">&nbsp;</div>
     <div class="contact info">
       <p>
         Cosmin Stejerean<br />
@@ -50,7 +52,7 @@
         <a href="http://www.linkedin.com/in/cosmin">linkedin.com/in/cosmin</a><br />
       </p>
     </div>
-  </div>
+  </footer>
 </div>
 
 <script type="text/javascript">
