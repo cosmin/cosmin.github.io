@@ -8,7 +8,11 @@ title: Cosmin Stejerean
   <h1>Guides</h1>
   <ul class="posts">
     {% for post in site.categories.guides %}
-        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+        <li>
+          <span class="date">{{ post.date | date_to_string }}</span>
+          <span class="sep">&raquo;</span>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
      {% endfor %}
   </ul>
 
@@ -29,20 +33,76 @@ title: Cosmin Stejerean
 
   <h1>Talks, Presentations, Etc</h1>
   <ul class="posts">
-    <li><span>18 Apr 2012</span> &raquo; <a href="/presentations/getting-started-with-clojure.pdf">Portland Clojure &mdash; Getting Started with Clojure</a></li>
-    <li><span>21 Feb 2012</span> &raquo; <a href="/presentations/building-better-repl.pdf">Sydney Clojure &mdash; Building a Better Clojure REPL</a></li>
-    <li><span>08 Sep 2011</span> &raquo; <a href="/presentations/feature-toggles.pdf">Feature Toggles</a></li>
-    <li><span>04 Apr 2011</span> &raquo; <a href="/presentations/deploying-autoscalable-infrastructure-workshop.pdf">Deploying AutoScalable Infrastructure Workshop</a></li>
-    <li><span>10 Mar 2011</span> &raquo; PyCon 2011 &mdash; Deploying Web Applications to the Cloud <a href="/presentations/deploying-web-applications-to-the-cloud.pdf">[pdf]</a> <a href="http://ontwik.com/python/pycon-2011-deploying-django-web-applications-to-the-cloud/">[video]<a></li>
-    <li><span>18 Mar 2010</span> &raquo; <a href="http://offbytwo.blip.tv/file/3397934/">Git SVN Basics (video)</a></li>
-    <li><span>03 Feb 2010</span> &raquo; <a href="/presentations/using_git_svn.pdf">Getting started with Git SVN (pdf)</a></li>
-    <li><span>17 Jun 2009</span> &raquo; <a href="/presentations/using_java_from_clojure.pdf">Chicago Clojure &mdash; Using Java from Clojure</a></li>
-    <li><span>30 May 2009</span> &raquo; <a href="/presentations/chicago_code_camp_outline.txt">Chicago CodeCamp &mdash; Intro to Python (outline)</a></li>
-    <li><span>12 Feb 2009</span> &raquo; <a href="/presentations/packaging_python_apps.zip">ChiPy &mdash; Packaging Python apps for Windows or OS X (zip)</a></li>
-    <li><span>10 Jul 2008</span> &raquo; <a href="/presentations/gpu_programming_cuda.pdf">ChiPy &mdash; GPU Programming with CUDA</a></li>
-    <li><span>13 Aug 2007</span> &raquo; <a href="/presentations/detecting_rootkits.pdf">Detecting Rootkits</a></li>
-    <li><span>13 Aug 2007</span> &raquo; <a href="/presentations/windows_nt_rootkits.pdf">Windows NT Rootkits</a></li>
-    <li><span>08 Dec 2006</span> &raquo; <a href="/presentations/honeypots.pdf">Introduction to Honeypots</a></li>
+    <li>
+      <span class="date">18 Apr 2012</span>
+      <span class="sep">&raquo;</span>
+      <a href="/presentations/getting-started-with-clojure.pdf">Portland Clojure &mdash; Getting Started with Clojure</a>
+    </li>
+    <li>
+      <span class="date">21 Feb 2012</span>
+      <span class="sep">&raquo;</span>
+      <a href="/presentations/building-better-repl.pdf">Sydney Clojure &mdash; Building a Better Clojure REPL</a>
+    </li>
+    <li>
+      <span class="date">08 Sep 2011</span>
+      <span class="sep">&raquo;</span>
+      <a href="/presentations/feature-toggles.pdf">Feature Toggles</a>
+    </li>
+    <li>
+      <span class="date">04 Apr 2011</span>
+      <span class="sep">&raquo;</span>
+      <a href="/presentations/deploying-autoscalable-infrastructure-workshop.pdf">Deploying AutoScalable Infrastructure Workshop</a>
+    </li>
+    <li>
+      <span class="date">10 Mar 2011</span>
+      <span class="sep">&raquo;</span>
+      <a href="http://ontwik.com/python/pycon-2011-deploying-django-web-applications-to-the-cloud/">Deploying Web Applications to the Cloud (video)</a><a>
+    </li>
+    <li>
+      <span class="date">18 Mar 2010</span>
+      <span class="sep">&raquo;</span>
+      <a href="http://offbytwo.blip.tv/file/3397934/">Git SVN Basics (video)</a>
+    </li>
+    <li>
+      <span class="date">03 Feb 2010</span>
+      <span class="sep">&raquo;</span>
+      <a href="/presentations/using_git_svn.pdf">Getting started with Git SVN (pdf)</a>
+    </li>
+    <li>
+      <span class="date">17 Jun 2009</span>
+      <span class="sep">&raquo;</span>
+      <a href="/presentations/using_java_from_clojure.pdf">Chicago Clojure &mdash; Using Java from Clojure</a>
+    </li>
+    <li>
+      <span class="date">30 May 2009</span>
+      <span class="sep">&raquo;</span>
+      <a href="/presentations/chicago_code_camp_outline.txt">Chicago CodeCamp &mdash; Intro to Python (outline)</a>
+    </li>
+    <li>
+      <span class="date">12 Feb 2009</span>
+      <span class="sep">&raquo;</span>
+      <a href="/presentations/packaging_python_apps.zip">Packaging Python apps for Windows or OS X</a>
+    </li>
+    <li>
+      <span class="date">10 Jul 2008</span>
+      <span class="sep">&raquo;</span>
+      <a href="/presentations/gpu_programming_cuda.pdf">GPU Programming with CUDA</a>
+    </li>
+    <li>
+      <span class="date">13 Aug 2007</span>
+      <span class="sep">&raquo;</span>
+      <a href="/presentations/detecting_rootkits.pdf">Detecting Rootkits</a>
+    </li>
+    <li>
+      <span class="date">13 Aug 2007</span>
+      <span class="sep">&raquo;</span>
+      <a href="/presentations/windows_nt_rootkits.pdf">Windows NT Rootkits</a>
+    </li>
+    <li>
+      <span class="date">08 Dec 2006</span>
+      <span class="sep">&raquo;</span>
+      <a href="/presentations/honeypots.pdf">Introduction to Honeypots</a>
+    </li>
   </ul>
 
   <h1>Other Open Source Contributions</h1>
