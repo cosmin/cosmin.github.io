@@ -19,7 +19,7 @@ body {
    background-color: #ecedef;
    background-image: url('/images/linen.png');
    font-family: "adelle",serif;
-   font-size: 16px;
+   -webkit-text-size-adjust: 100%;
    text-align: center;
    color: #444;
 }
@@ -67,13 +67,16 @@ table {
 ul.posts {
    list-style-type: none;
    margin-bottom: 2em;
-}
-
-ul.posts li {
    line-height: 1.75em;
 }
 
-ul.posts span {
+ul.posts li {
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   overflow: hidden;
+}
+
+ul.posts .date {
    color: #aaa;
    font-family: Monaco, "Courier New", monospace;
    font-size: 80%;
@@ -89,19 +92,23 @@ ul.posts span {
    font-size: 110%;
    text-align: justify;
    margin: 0px auto 2em auto;
-   width: 46em;
+   max-width: 672px;
    padding: 3em 3em 2em 3em;
    line-height: 1.5em;
    background: #fefefe;
 }
 
-.header {
+header {
    color: #a00;
    font-weight: bold;
    margin-bottom: 2em;
 }
 
-.header .title a {
+header .logo {
+   display: inline;
+}
+
+header .logo a {
    font-size: 2em;
    -moz-text-shadow: 1px 1px 1px #ccc;
    -webkit-text-shadow: 1px 1px 1px #ccc;
@@ -109,34 +116,40 @@ ul.posts span {
    margin-left: -1px;
 }
 
-.header .sections {
-   float: right;
-}
-
-.header a {
+header .logo a,
+header .logo a:visited {
    color: #a00;
    text-decoration: none;
 }
 
-.header a:hover {
+header .logo a:hover {
    color: black;
 }
 
-.header a.extra {
+nav {
+   display: inline;
+   float: right;
+}
+
+nav a,
+nav a:visited {
    color: #888;
    text-decoration: none;
-   margin-left: 1em;
 }
 
-.header a.extra:hover {
+nav a:hover {
    color: black;
+}
+
+nav a:first-child ~ a {
+   margin-left: 1em;
 }
 
 .site .meta {
    color: #aaa;
 }
 
-.site .footer {
+footer {
    font-size: 80%;
    color: #666;
    border-top: 4px solid #eee;
@@ -144,34 +157,34 @@ ul.posts span {
    overflow: hidden;
 }
 
-.site .footer .contact {
+footer .contact {
    float: left;
    margin-right: 3em;
 }
 
-.site .footer .contact a {
+footer .contact a {
    color: #8085C1;
 }
 
-.footer .contact.links {
+footer .contact.links {
    float: right;
    margin-right: 0px;
    text-align: right;
 }
 
-.site .footer .headshot {
+footer .headshot {
    margin-top: 0.5em;
    margin-right: 2em;
    float: left;
 }
 
-.site .footer .rss {
+footer .rss {
    margin-top: 1.1em;
    margin-right: -.2em;
    float: right;
 }
 
-.site .footer .rss img {
+footer .rss img {
    border: 0;
 }
 
@@ -223,4 +236,62 @@ ul.posts span {
 
 #related h2 {
    margin-bottom: 1em;
+}
+
+footer .headshot {
+   width: 80px;
+   height: 80px;
+   background: url('http://www.gravatar.com/avatar/1b5633ca7f3390376c779e5f716a3ed0.png') no-repeat;
+}
+
+@media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) /* Retina */ {
+   h1, h2, h3 { text-rendering: optimizeLegibility; }
+
+   footer .headshot {
+      background: url('http://www.gravatar.com/avatar/1b5633ca7f3390376c779e5f716a3ed0.png?s=160') no-repeat;
+      background-size: 80px 80px;
+      width: 80px;
+      height: 80px;
+   }
+}
+
+@media screen and (max-width: 700px) {
+   ul.posts li span.date {
+      display: none;
+   }
+}
+
+@media screen and (max-width: 480px) /*iPhone Landscape */ {
+   body {
+      font-size: 12px;
+      width: auto;
+   }
+   header {
+      width: 100%;
+      text-align: center;
+   }
+
+   header .logo {
+      display: block;
+   }
+
+   header nav {
+      display: block;
+      float: none;
+   }
+
+   .site {
+      font-size: 100%;
+      text-align: justify;
+      margin: 0px auto 0.5em auto;
+      max-width: 100%;
+      padding: 1em 1em 1em 1em;
+      line-height: 1.5em;
+   }
+
+}
+@media screen and (max-width: 320px) /*iPhone Portrait */ {
+   footer .headshot {
+      display: none;
+   }
 }
