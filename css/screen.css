@@ -18,7 +18,7 @@ html, body {
 body {
    background-color: #ecedef;
    background-image: url('/images/linen.png');
-   font-family: "adelle",serif;
+   font-family: "bryant-web", Verdana, sans-serif;;
    -webkit-text-size-adjust: 100%;
    text-align: center;
    color: #444;
