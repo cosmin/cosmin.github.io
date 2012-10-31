@@ -21,12 +21,12 @@ body {
    font-family: "bryant-web", Verdana, sans-serif;;
    -webkit-text-size-adjust: 100%;
    text-align: center;
-   color: #444;
+   color: #222;
 }
 
 h1 {
    font-size: 1.2em;
-   color: #222;
+   color: #111;
 }
 
 h2, h3, h4, h5, h6 {
@@ -89,7 +89,7 @@ ul.posts .date {
 /*****************************************************************************/
 
 .site {
-   font-size: 110%;
+   font-size: 18px;
    text-align: justify;
    margin: 0px auto 2em auto;
    max-width: 672px;
@@ -100,7 +100,7 @@ ul.posts .date {
 
 header {
    color: #a00;
-   font-weight: bold;
+   font-weight: 600;
    margin-bottom: 2em;
 }
 
@@ -113,6 +113,7 @@ header .logo a {
    -moz-text-shadow: 1px 1px 1px #ccc;
    -webkit-text-shadow: 1px 1px 1px #ccc;
    text-shadow: 1px 1px 1px #ccc;
+   font-weight: 500;
    margin-left: -1px;
 }
 
