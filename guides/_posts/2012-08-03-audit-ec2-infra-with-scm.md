@@ -13,9 +13,9 @@ Just to be sure, you review the security groups for this instance to make sure o
 
 These questions, and many others about the historic state of your infrastructure, could be answered easily if this information was present in a source control repository. You could then easily see when changes happened, browse to a specific point in time, and even use your source control infrastructure for things like email alerts.
 
-This is where [ec2audit](https://github.com/SimpleFinance/ec2audit) comes in. It can write the current state of your EC2 instances, security groups and ELB volumes to a series of JSON or YAML files that are suitable for version control.
+This is where [ec2audit](https://github.com/RisingOak/ec2audit) comes in. It can write the current state of your EC2 instances, security groups and ELB volumes to a series of JSON or YAML files that are suitable for version control.
 
-In order to set up `ec2audit` you need IAM credentials, a source control repository, and some way to run it on a schedule. At Simple, we use Jenkins to schedule the runs, and Git for source control. Things like `git log -S` make it easy to find when things changed.
+In order to set up `ec2audit` you need IAM credentials, a source control repository, and some way to run it on a schedule. For example you can use Jenkins to schedule the runs and Git for source control. Things like `git log -S` make it easy to find when things changed.
 
 To install `ec2audit`, use `pip` or `easy_install`. You can also [download a tarball](http://pypi.python.org/pypi/ec2audit) and run `python setup.py install`.
 
