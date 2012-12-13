@@ -41,10 +41,10 @@ Remove backup files recursively even if they contain spaces
 
 h3. Placement of the arguments
 
-In the examples above xargs reads all non-white-space elements from standard input and concatenates them into the given command line before executing it. This alone is very useful in many circumstances. Sometimes however you might want to insert the arguments into the middle of a command. The <code>-J</code> flag to xargs takes a string that will be replaced with the supplied input before the command is executed. A common choice is %.
+In the examples above xargs reads all non-white-space elements from standard input and concatenates them into the given command line before executing it. This alone is very useful in many circumstances. Sometimes however you might want to insert the arguments into the middle of a command. The <code>-I</code> flag to xargs takes a string that will be replaced with the supplied input before the command is executed. A common choice is %.
 
 Move all backup files somewhere else
-<code>find . -name '*~' -print 0 | xargs -0 -J % cp % ~/backups </code>
+<code>find . -name '*~' -print 0 | xargs -0 -I % cp % ~/backups </code>
 
 
 h3. Maximum command length
