@@ -175,12 +175,12 @@ This is as easy as running running git push.
 
 Your application is now deployed, but you still need to configure the database
 
-@heroku run myawesomeproject/manage.py syncdb@
-@heroku run myawesomeproject/manage.py migrate@
+@heroku run manage.py syncdb@
+@heroku run manage.py migrate@
 
 You should now have a working application, but we have not yet deployed our static files.
 
-@heroku run myawesomeproject/manage.py collectstatic@
+@heroku run manage.py collectstatic@
 
 At this point you should have a fully functional Django application deployed to Heroku with static files hosted in S3. If you are having problems you can investigate the logs with @heroku logs@. You can also consider turning on @DEBUG@ temporarily, but *don't* forget to turn this off. To make it easier to turn DEBUG on and off consider adding the following to your @settings.py@
 
