@@ -17,6 +17,10 @@ In order to get the IP address to show in /etc/issue I needed to write a custom 
 
 The above script will run ifconfig and print out the IP address (after filtering out the localhost interface). I saved this script to <code>/usr/local/bin/get-ip-address</code>. In order to get this into /etc/issue I decided to first copy <code>/etc/issue</code> to <code>/etc/issue-standard</code>, then create the following script that when run will overwrite /etc/issue with the contents of <code>/etc/issue-standard</code> + IP address.
 
+h3. Debian/Ubuntu
+
+Save the following script as <code>/etc/network/if-up.d/show-ip-address</code>
+
 <pre><code>
 #!/bin/sh
 if [ "$METHOD" = loopback ]; then
@@ -33,4 +37,23 @@ cp /etc/issue-standard /etc/issue
 echo "" >> /etc/issue
 </code></pre>
 
-Since I'm using Ubuntu I put this script in <code>/etc/network/if-up.d/</code> and mark it executable. This will run the script automatically each time an interface is brought up. After restarting networking the IP address now shows up at the pre-login message.
+and don't forget to mark it executable.
+
+
+h3. RedHat/CentOS
+
+Save the following script as <code>/sbin/ifup-local</code>
+
+<pre><code>
+#!/bin/sh
+
+if [ "$1" = lo ]; then
+    exit 0
+fi
+
+cp /etc/issue-standard /etc/issue
+/usr/local/bin/get-ip-address >> /etc/issue
+echo "" >> /etc/issue
+</code></pre>
+
+and don't forget to mark it executable.
