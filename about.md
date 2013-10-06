@@ -5,15 +5,16 @@ title: Cosmin Stejerean (offbytwo)
 
 # About
 
-I currently live nearby Dallas, TX, where I run a boutique technology
-consulting and training firm, specializing in continuous delivery and
-cloud infrastructure. I have a background that blends software
-engineering, operations and information security, which I have done
-professionally since 2004. You can read more about my background on
-[LinkedIn](http://linkedin.com/in/cosmin).
+After nearly a decade of consulting and training across software
+development, information security and IT operations I founded
+[Rising Oak](http://www.risingoak.com), where I apply my broad
+technology background and a passion for solving problems to help
+mid-market companies solve problems at the intersection of business
+and technology.
 
-When I'm not consulting I enjoy building web and mobile applications,
-contributing to open source projects, and occasionally writing
-articles on this site. I am also trying to improve my design
-skills. You can find me sharing links and talking about these topics
-on [Twitter](http://twitter.com/offbytwo).
+I have lived in Dallas for most of the past 4 years, although I spent
+a good part of that time on the road: Seattle, Portland, Chicago, San
+Francisco, New York, London, Bangalore, Beijing, Xi'an, Melbourne and
+Sydney. Being located next to the DFW International Airport is a huge
+plus when consulting.
+
