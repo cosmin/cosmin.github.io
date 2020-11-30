@@ -9,28 +9,22 @@ title: Cosmin Stejerean (offbytwo)
     <img src="http://en.gravatar.com/userimage/1952539/b7338f029a2fa8431919bd2e5d63ee20.jpg?size=200" style="padding-right: 20px;" >
 </div>
 
-Cosmin is currently the Chief Technology Officer at
+Cosmin is a member of the Media Algorithms team at Facebook, working
+on optimizing the quality of video at scale. Prior to joining Facebook
+he founded and sold a startup focused on distributed video
+transcoding.
+
+Before that he spent four years as the the Chief Technology Officer at
 [Fulcrum Technologies](http://www.fulcrum.net), the world leader in
 Asset Lifecycle Management software for Communications Service
-Providers.
+Provider. In that role Cosmin was responsible for developing the
+overall technology vision for the company, driving engineering
+initiatives and overseeing the product development organization.
 
-In this role Cosmin is responsible for developing the overall
-technology vision for the company, driving engineering initiatives and
-overseeing the product development organization. He works closely with
-clients to make sure that the product evolves to meet their rapidly
-changing business needs.
-
-Cosmin brings a decade of consulting experience across North America,
-India, China and Australia. He has a broad technology background
-spanning software development, information security and IT
-operations. Cosmin has worked for some of the largest Fortune 500
-telecommunication providers, airlines, insurance companies and
-retailers. 
-
-Prior to joining Fulcrum, Cosmin founded
-[Rising Oak](http://www.risingoak.com) where he applied his broad
-technology background and a passion for solving problems to help
-mid-market companies solve problems at the intersection of business
-and technology. Prior to that he worked as an international consultant
-and trainer at [ThoughtWorks](http://www.thoughtworks.com), leading
-the development of large distributed agile projects.
+Cosmin has a broad technology background spanning software
+development, information security and IT operations. Over the past 16
+years he worked for some of the largest Fortune 500 telecommunication
+providers, airlines, insurance companies and retailers. As an
+international consultant and trainer at ThoughtWorks, he led the
+development of large distributed agile projects, and spent time in
+India, China and Australia.
