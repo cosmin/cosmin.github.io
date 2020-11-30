@@ -3,9 +3,9 @@ layout: post
 title: Show IP address of VM as console pre-login message
 ---
 
-h1. {{ page.title }}
+# {{ page.title }}
 
-p(meta). 9 May 2008 - Chicago
+<p class="meta">9 May 2008 - Chicago</p>
 
 In case you didn't know the pre-login message you see at a Linux console typically comes from /etc/issue
 
@@ -17,7 +17,7 @@ In order to get the IP address to show in /etc/issue I needed to write a custom 
 
 The above script will run ifconfig and print out the IP address (after filtering out the localhost interface). I saved this script to <code>/usr/local/bin/get-ip-address</code>. In order to get this into /etc/issue I decided to first copy <code>/etc/issue</code> to <code>/etc/issue-standard</code>, then create the following script that when run will overwrite /etc/issue with the contents of <code>/etc/issue-standard</code> + IP address.
 
-h3. Debian/Ubuntu
+### Debian/Ubuntu
 
 Save the following script as <code>/etc/network/if-up.d/show-ip-address</code>
 
@@ -27,7 +27,7 @@ if [ "$METHOD" = loopback ]; then
     exit 0
 fi
 
-# Only run from ifup.
+1. Only run from ifup.
 if [ "$MODE" != start ]; then
     exit 0
 fi
@@ -40,7 +40,7 @@ echo "" >> /etc/issue
 and don't forget to mark it executable.
 
 
-h3. RedHat/CentOS
+### RedHat/CentOS
 
 Save the following script as <code>/sbin/ifup-local</code>
 

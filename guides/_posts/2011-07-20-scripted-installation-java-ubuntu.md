@@ -3,9 +3,9 @@ layout: post
 title: Scripted installation of Java on Ubuntu
 ---
 
-h1. Scripted installation of Java on Ubuntu (with Bash or Puppet)
+# Scripted installation of Java on Ubuntu (with Bash or Puppet)
 
-p(meta). 20 July 2011 - Dallas
+<p class="meta">20 July 2011 - Dallas</p>
 
 Every few months I need to script the installation of Java on Ubuntu, and I always seem to forget quite how to do it. I also seem to fail at finding anything useful on Google. Most of the posts either skip critical steps or involve manual steps. So I'm going to document this here for future reference.
 

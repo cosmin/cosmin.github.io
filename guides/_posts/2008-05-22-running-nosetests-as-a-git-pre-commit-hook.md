@@ -3,9 +3,9 @@ layout: post
 title: Running nosetests as a git pre-commit hook
 ---
 
-h1. {{ page.title }}
+# {{ page.title }}
 
-p(meta). 22 May 2008 - Chicago
+<p class="meta">22 May 2008 - Chicago</p>
 
 I've started using git for all my development recently (since it integrates so nicely with svn). I wanted to experiment with running my test as a pre-commit hook in git. In case you're curious all the hooks in git live in the hooks folder inside of .git
 

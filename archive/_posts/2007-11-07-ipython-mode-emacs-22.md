@@ -3,9 +3,9 @@ layout: post
 title: ipython-mode with Emacs 22
 ---
 
-h1. {{ page.title }}
+# {{ page.title }}
 
-p(meta). 7 November 2008 - Chicago
+<p class="meta">7 November 2008 - Chicago</p>
 
 I started using Emacs recently for Lisp programming and I decided to try using it with Python as well so I don't need to keep switching editors. Traditionally there was the python-mode project for Emacs up to 21. But Emacs 22 comes with its own shiny python mode. The problem is I am very used to using IPython and I wanted to get it to work in Emacs. The IPython distribution comes with ipython.el but this requires python-mode.el and therefore does not work with the python mode in Emacs22. After a bit of poking around here is how to setup IPython mode in Emacs22. Perhaps it might help another Emacs newbie like myself.
 

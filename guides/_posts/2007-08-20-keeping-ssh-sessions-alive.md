@@ -3,9 +3,9 @@ layout: post
 title: Keeping SSH sessions alive
 ---
 
-h1. {{ page.title }}
+# {{ page.title }}
 
-p(meta). 20 August 2007 - Chicago
+<p class="meta">20 August 2007 - Chicago</p>
 
 This is one of those things that I setup once a year when I get a new machine and then I always seem to forget the next time around so I'll post it here as a reference to myself and perhaps also help the occasional Googler. If you are having problems with your SSH connection getting dropped after a certain amount of time (usually caused by NAT firewalls and home routers), you can use the following setting to keep your connection alive
 

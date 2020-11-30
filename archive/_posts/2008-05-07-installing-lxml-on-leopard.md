@@ -3,9 +3,9 @@ layout: post
 title: Installing lxml 2 on OS X Leopard
 ---
 
-h1. {{ page.title }}
+# {{ page.title }}
 
-p(meta). 7 May 2008 - Chicago
+<p class="meta">7 May 2008 - Chicago</p>
 
 Update: the post below is about installing lxml 2.0 (2.0.5 is the specific version I installed).
 

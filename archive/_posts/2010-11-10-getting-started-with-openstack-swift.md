@@ -3,9 +3,9 @@ layout: post
 title: Getting started (quickly) with OpenStack's Swift
 ---
 
-h1. {{ page.title }}
+# {{ page.title }}
 
-p(meta). 10 November 2010 - San Antonio
+<p class="meta">10 November 2010 - San Antonio</p>
 
 I was at the <a href="http://www.openstack.org/blog/2010/09/the-second-openstack-design-conference/">OpenStack Design Summit</a> this week and I wanted to check out the latest release of Swift, OpenStack's blob storage technology. The <a href="http://swift.openstack.org/development_saio.html">Swift All In One</a> guide contains everything necessary to get started with Swift on a development machine, but it involves far too much effort for my tastes.
 

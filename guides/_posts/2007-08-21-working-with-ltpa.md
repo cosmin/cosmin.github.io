@@ -3,14 +3,14 @@ layout: post
 title: Working with LTPA
 ---
 
-h1. Working with Lightweight Third Party Authentication (LTPA)
+# Working with Lightweight Third Party Authentication (LTPA)
 
-p(meta). 21 August 2007 - Chicago
+<p class="meta">21 August 2007 - Chicago</p>
 
 Lightweight Third-Party Authentication (LTPA), is an single sign-on technology used in IBM WebSphere and Lotus Domino products. A server that is configured to use the LTPA authentication will send a session cookie to the browser after sucessfuly authenticating a user. This cookie is only valid for one browsing session. This cookie contains the LTPA token.
 
 A user with a valid LTPA cookie can access a server that is a member of the same authentication domain as the first server and will be automatically authenticated. The cookies themselves contain information about the user that has been authenticated, the realm the user was authenticated to (such as an LDAP server) and a timestamp. All of this information bis encrypted with a shared 3DES key and signed by a public/private key pair. This is all fine until you are trying to perform some troubleshooting and you realize you can't look inside of these cookies.
 
-One day I was in need of decrypting some tokens and couldn't find any information on the subject so I spent some time studying the format of the cookie and wrote some code to decrypt them. You can check out the code from "here":http://github.com/cosmin/samples/tree/master/LTPAUtils/
+One day I was in need of decrypting some tokens and couldn't find any information on the subject so I spent some time studying the format of the cookie and wrote some code to decrypt them. You can check out the code from [here](http://github.com/cosmin/samples/tree/master/LTPAUtils/)
 
 The LTPA cookie is encrypted with a 3DES key in DESede/ECB/PKCS5Padding mode. If you are extracting the key from a Websphere or other IBM server the key is likely protected with a password. The real key is encrypted also using 3DES in DESede/ECB/PKCS5Padding mode with the SHA hash of the supplied password padded with 0X0 up to 24 bytes. To decrypt the actual token you can take the password, generate a 3DES key, decrypt the encrypted key and then decrypt the cookie data. There is also a public/private key pair being used to sign the cookie. Since I had no intent in validating that the cookie is properly signed or in creating real cookies I did not spend anytime investigating the signature portion of the cookie. Drop me a note if you find the code useful or if you have some improvements you would like to share.
